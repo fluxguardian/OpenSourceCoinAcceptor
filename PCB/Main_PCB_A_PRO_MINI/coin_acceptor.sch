@@ -18780,12 +18780,10 @@ General Instrument, Semikron, Diotec, Fagor&lt;p&gt;
 <part name="GND4" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="GND5" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="JP_OENT" library="pinhead" library_urn="urn:adsk.eagle:library:325" deviceset="PINHD-1X3" device="" package3d_urn="urn:adsk.eagle:package:22458/2"/>
-<part name="R5" library="resistor" library_urn="urn:adsk.eagle:library:348" deviceset="R-EU_" device="0309/10" package3d_urn="urn:adsk.eagle:package:26087/1" value="1k"/>
 <part name="P+2" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="+5V" device=""/>
 <part name="P+3" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="+5V" device=""/>
 <part name="GND6" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="JP_ODIAM" library="pinhead" library_urn="urn:adsk.eagle:library:325" deviceset="PINHD-1X3" device="" package3d_urn="urn:adsk.eagle:package:22458/2"/>
-<part name="R6" library="resistor" library_urn="urn:adsk.eagle:library:348" deviceset="R-EU_" device="0309/10" package3d_urn="urn:adsk.eagle:package:26087/1" value="1k"/>
 <part name="JP_ALRM" library="pinhead" library_urn="urn:adsk.eagle:library:325" deviceset="PINHD-1X2" device="" package3d_urn="urn:adsk.eagle:package:22435/2"/>
 <part name="JP_BAT_S" library="pinhead" library_urn="urn:adsk.eagle:library:325" deviceset="PINHD-1X2" device="" package3d_urn="urn:adsk.eagle:package:22435/2"/>
 <part name="JP_COM" library="pinhead" library_urn="urn:adsk.eagle:library:325" deviceset="PINHD-1X2" device="" package3d_urn="urn:adsk.eagle:package:22435/2"/>
@@ -18821,7 +18819,6 @@ General Instrument, Semikron, Diotec, Fagor&lt;p&gt;
 <part name="GND23" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="P+8" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="+5V" device=""/>
 <part name="C2" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-EU" device="025-024X044" package3d_urn="urn:adsk.eagle:package:23630/1" value="10uF"/>
-<part name="GND10" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="JP_SEMP" library="pinhead" library_urn="urn:adsk.eagle:library:325" deviceset="PINHD-1X2" device="" package3d_urn="urn:adsk.eagle:package:22435/2"/>
 <part name="LED_G" library="led" library_urn="urn:adsk.eagle:library:259" deviceset="LED" device="5MM" package3d_urn="urn:adsk.eagle:package:15799/1"/>
 <part name="R13" library="resistor" library_urn="urn:adsk.eagle:library:348" deviceset="R-EU_" device="0309/10" package3d_urn="urn:adsk.eagle:package:26087/1" value="0.2k"/>
@@ -18829,7 +18826,6 @@ General Instrument, Semikron, Diotec, Fagor&lt;p&gt;
 <part name="LED_R" library="led" library_urn="urn:adsk.eagle:library:259" deviceset="LED" device="5MM" package3d_urn="urn:adsk.eagle:package:15799/1"/>
 <part name="R15" library="resistor" library_urn="urn:adsk.eagle:library:348" deviceset="R-EU_" device="0309/10" package3d_urn="urn:adsk.eagle:package:26087/1" value="0.2k"/>
 <part name="GND19" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
-<part name="GND20" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="JP_12V" library="pinhead" library_urn="urn:adsk.eagle:library:325" deviceset="PINHD-1X2" device="" package3d_urn="urn:adsk.eagle:package:22435/2"/>
 <part name="P+5" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="+12V" device=""/>
 <part name="GND24" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
@@ -18859,6 +18855,7 @@ General Instrument, Semikron, Diotec, Fagor&lt;p&gt;
 <part name="P+1" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="+5V" device=""/>
 <part name="R18" library="resistor" library_urn="urn:adsk.eagle:library:348" deviceset="R-EU_" device="0309/10" package3d_urn="urn:adsk.eagle:package:26087/1" value="0.5k"/>
 <part name="R19" library="resistor" library_urn="urn:adsk.eagle:library:348" deviceset="R-EU_" device="0309/10" package3d_urn="urn:adsk.eagle:package:26087/1" value="0.5k"/>
+<part name="R20" library="resistor" library_urn="urn:adsk.eagle:library:348" deviceset="R-EU_" device="0309/10" package3d_urn="urn:adsk.eagle:package:26087/1" value=".22k"/>
 </parts>
 <sheets>
 <sheet>
@@ -18875,14 +18872,12 @@ General Instrument, Semikron, Diotec, Fagor&lt;p&gt;
 <instance part="JP_S_AC" gate="G$1" x="132.08" y="5.08" rot="R180"/>
 <instance part="JP_S_PTH" gate="G$1" x="132.08" y="-17.78" rot="R180"/>
 <instance part="GND4" gate="1" x="127" y="48.26" rot="R180"/>
-<instance part="GND5" gate="1" x="137.16" y="71.12"/>
-<instance part="JP_OENT" gate="A" x="127" y="81.28" rot="R180"/>
-<instance part="R5" gate="G$1" x="137.16" y="88.9" rot="R90"/>
-<instance part="P+2" gate="1" x="147.32" y="66.04" rot="R180"/>
+<instance part="GND5" gate="1" x="121.92" y="71.12"/>
+<instance part="JP_OENT" gate="A" x="111.76" y="81.28" rot="R180"/>
+<instance part="P+2" gate="1" x="139.7" y="66.04" rot="R180"/>
 <instance part="P+3" gate="1" x="180.34" y="63.5"/>
 <instance part="GND6" gate="1" x="177.8" y="68.58"/>
 <instance part="JP_ODIAM" gate="A" x="167.64" y="81.28" rot="R180"/>
-<instance part="R6" gate="G$1" x="180.34" y="88.9" rot="R90"/>
 <instance part="JP_ALRM" gate="G$1" x="88.9" y="-45.72" rot="R180"/>
 <instance part="JP_BAT_S" gate="G$1" x="132.08" y="-48.26" rot="R180"/>
 <instance part="JP_COM" gate="G$1" x="226.06" y="60.96" rot="R180"/>
@@ -18918,7 +18913,6 @@ General Instrument, Semikron, Diotec, Fagor&lt;p&gt;
 <instance part="GND23" gate="1" x="93.98" y="109.22"/>
 <instance part="P+8" gate="1" x="93.98" y="124.46"/>
 <instance part="C2" gate="G$1" x="93.98" y="114.3" rot="R180"/>
-<instance part="GND10" gate="1" x="137.16" y="99.06" rot="R180"/>
 <instance part="JP_SEMP" gate="G$1" x="20.32" y="-60.96" rot="R180"/>
 <instance part="LED_G" gate="G$1" x="124.46" y="40.64" rot="R270"/>
 <instance part="R13" gate="G$1" x="114.3" y="40.64" rot="R180"/>
@@ -18926,7 +18920,6 @@ General Instrument, Semikron, Diotec, Fagor&lt;p&gt;
 <instance part="LED_R" gate="G$1" x="185.42" y="53.34" rot="R90"/>
 <instance part="R15" gate="G$1" x="195.58" y="58.42" rot="R90"/>
 <instance part="GND19" gate="1" x="195.58" y="66.04" rot="R180"/>
-<instance part="GND20" gate="1" x="180.34" y="99.06" rot="R180"/>
 <instance part="JP_12V" gate="G$1" x="48.26" y="114.3" rot="R180"/>
 <instance part="P+5" gate="1" x="60.96" y="124.46"/>
 <instance part="GND24" gate="1" x="60.96" y="106.68"/>
@@ -18952,7 +18945,7 @@ General Instrument, Semikron, Diotec, Fagor&lt;p&gt;
 <instance part="C1" gate="G$1" x="45.72" y="-63.5" rot="R90"/>
 <instance part="J1" gate="1" x="198.12" y="0" rot="R90"/>
 <instance part="J2" gate="1" x="38.1" y="-71.12" rot="R90"/>
-<instance part="J3" gate="1" x="147.32" y="76.2" rot="R90"/>
+<instance part="J3" gate="1" x="139.7" y="76.2" rot="R90"/>
 <instance part="B1" gate="1" x="124.46" y="12.7"/>
 <instance part="X2" gate="-1" x="231.14" y="114.3"/>
 <instance part="X2" gate="-2" x="231.14" y="111.76"/>
@@ -18961,6 +18954,7 @@ General Instrument, Semikron, Diotec, Fagor&lt;p&gt;
 <instance part="P+1" gate="1" x="205.74" y="121.92"/>
 <instance part="R18" gate="G$1" x="210.82" y="114.3" rot="R180"/>
 <instance part="R19" gate="G$1" x="220.98" y="109.22" rot="R180"/>
+<instance part="R20" gate="G$1" x="152.4" y="81.28" rot="R180"/>
 </instances>
 <busses>
 </busses>
@@ -19035,12 +19029,9 @@ General Instrument, Semikron, Diotec, Fagor&lt;p&gt;
 <wire x1="142.24" y1="35.56" x2="137.16" y2="35.56" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<pinref part="R6" gate="G$1" pin="1"/>
-<wire x1="180.34" y1="83.82" x2="190.5" y2="83.82" width="0.1524" layer="91"/>
 <label x="190.5" y="83.82" size="1.27" layer="95" xref="yes"/>
 <pinref part="JP_ODIAM" gate="A" pin="3"/>
-<wire x1="180.34" y1="83.82" x2="170.18" y2="83.82" width="0.1524" layer="91"/>
-<junction x="180.34" y="83.82"/>
+<wire x1="190.5" y1="83.82" x2="170.18" y2="83.82" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="OS_ENT" class="0">
@@ -19050,12 +19041,9 @@ General Instrument, Semikron, Diotec, Fagor&lt;p&gt;
 <wire x1="142.24" y1="38.1" x2="137.16" y2="38.1" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<pinref part="R5" gate="G$1" pin="1"/>
-<wire x1="137.16" y1="83.82" x2="142.24" y2="83.82" width="0.1524" layer="91"/>
-<label x="142.24" y="83.82" size="1.27" layer="95" xref="yes"/>
+<label x="119.38" y="83.82" size="1.27" layer="95" xref="yes"/>
 <pinref part="JP_OENT" gate="A" pin="3"/>
-<wire x1="129.54" y1="83.82" x2="137.16" y2="83.82" width="0.1524" layer="91"/>
-<junction x="137.16" y="83.82"/>
+<wire x1="114.3" y1="83.82" x2="119.38" y2="83.82" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="GND" class="1">
@@ -19106,8 +19094,8 @@ General Instrument, Semikron, Diotec, Fagor&lt;p&gt;
 <segment>
 <pinref part="JP_OENT" gate="A" pin="1"/>
 <pinref part="GND5" gate="1" pin="GND"/>
-<wire x1="129.54" y1="78.74" x2="137.16" y2="78.74" width="0.1524" layer="91"/>
-<wire x1="137.16" y1="78.74" x2="137.16" y2="73.66" width="0.1524" layer="91"/>
+<wire x1="114.3" y1="78.74" x2="121.92" y2="78.74" width="0.1524" layer="91"/>
+<wire x1="121.92" y1="78.74" x2="121.92" y2="73.66" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="JP_ODIAM" gate="A" pin="1"/>
@@ -19188,11 +19176,6 @@ General Instrument, Semikron, Diotec, Fagor&lt;p&gt;
 <wire x1="101.6" y1="111.76" x2="101.6" y2="114.3" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<pinref part="R5" gate="G$1" pin="2"/>
-<pinref part="GND10" gate="1" pin="GND"/>
-<wire x1="137.16" y1="93.98" x2="137.16" y2="96.52" width="0.1524" layer="91"/>
-</segment>
-<segment>
 <pinref part="R13" gate="G$1" pin="2"/>
 <pinref part="GND16" gate="1" pin="GND"/>
 <wire x1="109.22" y1="40.64" x2="109.22" y2="38.1" width="0.1524" layer="91"/>
@@ -19200,11 +19183,6 @@ General Instrument, Semikron, Diotec, Fagor&lt;p&gt;
 <segment>
 <pinref part="R15" gate="G$1" pin="2"/>
 <pinref part="GND19" gate="1" pin="GND"/>
-</segment>
-<segment>
-<pinref part="GND20" gate="1" pin="GND"/>
-<pinref part="R6" gate="G$1" pin="2"/>
-<wire x1="180.34" y1="96.52" x2="180.34" y2="93.98" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="JP_12V" gate="G$1" pin="1"/>
@@ -19358,7 +19336,7 @@ General Instrument, Semikron, Diotec, Fagor&lt;p&gt;
 <segment>
 <pinref part="P+2" gate="1" pin="+5V"/>
 <pinref part="J3" gate="1" pin="1"/>
-<wire x1="147.32" y1="68.58" x2="147.32" y2="71.12" width="0.1524" layer="91"/>
+<wire x1="139.7" y1="68.58" x2="139.7" y2="71.12" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="P+1" gate="1" pin="+5V"/>
@@ -19575,12 +19553,11 @@ General Instrument, Semikron, Diotec, Fagor&lt;p&gt;
 </net>
 <net name="N$5" class="1">
 <segment>
-<pinref part="JP_OENT" gate="A" pin="2"/>
-<wire x1="129.54" y1="81.28" x2="147.32" y2="81.28" width="0.1524" layer="91"/>
 <pinref part="J3" gate="1" pin="2"/>
-<pinref part="JP_ODIAM" gate="A" pin="2"/>
-<wire x1="170.18" y1="81.28" x2="147.32" y2="81.28" width="0.1524" layer="91"/>
-<junction x="147.32" y="81.28"/>
+<wire x1="137.16" y1="81.28" x2="139.7" y2="81.28" width="0.1524" layer="91"/>
+<pinref part="R20" gate="G$1" pin="2"/>
+<wire x1="139.7" y1="81.28" x2="147.32" y2="81.28" width="0.1524" layer="91"/>
+<junction x="139.7" y="81.28"/>
 </segment>
 </net>
 <net name="5V_V0" class="1">
@@ -19643,6 +19620,19 @@ General Instrument, Semikron, Diotec, Fagor&lt;p&gt;
 <pinref part="R19" gate="G$1" pin="1"/>
 <pinref part="X2" gate="-3" pin="S"/>
 <wire x1="226.06" y1="109.22" x2="228.6" y2="109.22" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$8" class="0">
+<segment>
+<pinref part="JP_OENT" gate="A" pin="2"/>
+<wire x1="127" y1="81.28" x2="114.3" y2="81.28" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$9" class="0">
+<segment>
+<pinref part="R20" gate="G$1" pin="1"/>
+<pinref part="JP_ODIAM" gate="A" pin="2"/>
+<wire x1="157.48" y1="81.28" x2="170.18" y2="81.28" width="0.1524" layer="91"/>
 </segment>
 </net>
 </nets>
