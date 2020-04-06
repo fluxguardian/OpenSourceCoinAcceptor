@@ -242,7 +242,7 @@ bool assess_values(unsigned long tme, int em)
     while (coins_ctr < COIN_ITERATIONS_CTR && millis() - tm < COIN_PROG_TO)
     {
       digitalWrite(LED_RED_PIN, HIGH);
-      if (pulseIn(OPT_SENS_ENTRANCE, HIGH, 5000000) > 0)
+      if (pulseIn(OPT_SENS_ENTRANCE, HIGH, OS_ENTRANCE_POLL_TIME) > 0)
       {
         digitalWrite(LED_RED_PIN, LOW);
         // 1. Read em sensor low val

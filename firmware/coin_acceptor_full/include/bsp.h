@@ -39,16 +39,16 @@
 
 #define TOKEN_DATA_LEN				13
 // Constants
-#define EM_PULSE_PERIOD			100
+#define EM_PULSE_PERIOD			1000
 #define DELAY_EMP(x)			delayMicroseconds(x)
 #define COIN_NUM				3
 #define SOL_OPEN_TIME			150
 #define EM_VAL_MAX				1023	// Maximm adc value on solenoid input
-#define EM_MEASURE_TIME			500		// Time taken measuring em
+#define EM_MEASURE_TIME			150		// Time taken measuring em
 #define READ_EM_DELAY			5		// 
 #define OS_READ_DIAM_TO			2000000
 #define OP_TIMEOUT				3000	// Operation timeout
-#define OS_ENTRANCE_POLL_TIME	4000000	// Polling timeout for entrance optical sensor
+#define OS_ENTRANCE_POLL_TIME	8000000	// Polling timeout for entrance optical sensor
 #define OS_READ_DIAM_TIME		1500000	//
 #define BTN_1_POLL_DELAY		10
 #define BTN_1_HOLD_TIME_TO_PROG	10000
