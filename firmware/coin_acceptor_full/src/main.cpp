@@ -189,7 +189,7 @@ bool assess_values(unsigned long tme, int em)
     {
       temp = abs((int)tokens[i].avg_em - (int)em);
       PRINT("Temp 2 = "); PRINT_LN(temp);
-      if (temp <= tokens[i].SD_em)
+      if (temp <= 2*tokens[i].SD_em)
       {
         PRINT("**** Token --> "); PRINT(i+1); PRINT_LN(" inserted!! ****");
         return true;
@@ -247,7 +247,7 @@ bool assess_values(unsigned long tme, int em)
         digitalWrite(LED_RED_PIN, LOW);
         // 1. Read em sensor low val
         em_read();
-        if (!lo_em_val)
+        if (lo_em_val==0)
         {
           ring_alarm();
           // 2. Open bocking solenoid
@@ -384,7 +384,7 @@ bool assess_values(unsigned long tme, int em)
   void em_read()
   {
     bool ps = HIGH;
-    delay(500);
+    delay(50);
     for (int i = 0; i < 10; i++)
     {
       digitalWrite(SOL_EM_PULSER, HIGH);
@@ -395,18 +395,20 @@ bool assess_values(unsigned long tme, int em)
     unsigned long int ttl_val = 0;
     unsigned long int ctr = 0;
     start_time = millis();
+    lo_em_val=1023;
     while (millis() - start_time < EM_MEASURE_TIME)
     {
       digitalWrite(SOL_EM_PULSER, ps);
       DELAY_EMP(EM_PULSE_PERIOD);
       ttl_val += analogRead(SOL_EM_SENS);
+      em_val=analogRead(SOL_EM_SENS);
       ctr++;
-      //if (em_val < lo_em_val)
-      //lo_em_val = em_val;
+      if (em_val < lo_em_val)
+       lo_em_val = em_val;
       ps = !ps;
     }
     digitalWrite(SOL_EM_PULSER, LOW);
-    lo_em_val = (int)(ttl_val / ctr);
+   //lo_em_val = (int)(ttl_val / ctr);
   }
 
   // Checks if button was pressed (low) state

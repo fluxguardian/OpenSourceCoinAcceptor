@@ -44,7 +44,7 @@
 #define COIN_NUM				3
 #define SOL_OPEN_TIME			150
 #define EM_VAL_MAX				1023	// Maximm adc value on solenoid input
-#define EM_MEASURE_TIME			150		// Time taken measuring em
+#define EM_MEASURE_TIME			300		// Time taken measuring em
 #define READ_EM_DELAY			5		// 
 #define OS_READ_DIAM_TO			2000000
 #define OP_TIMEOUT				3000	// Operation timeout
